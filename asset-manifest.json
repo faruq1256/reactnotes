@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactnotes/static/css/main.e7380d17.chunk.css",
+    "main.js": "/reactnotes/static/js/main.165f8c70.chunk.js",
+    "main.js.map": "/reactnotes/static/js/main.165f8c70.chunk.js.map",
+    "runtime-main.js": "/reactnotes/static/js/runtime-main.80fd8e14.js",
+    "runtime-main.js.map": "/reactnotes/static/js/runtime-main.80fd8e14.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/reactnotes/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.64ddc5a3.chunk.js": "/reactnotes/static/js/2.64ddc5a3.chunk.js",
+    "static/js/2.64ddc5a3.chunk.js.map": "/reactnotes/static/js/2.64ddc5a3.chunk.js.map",
+    "static/js/3.935cadd7.chunk.js": "/reactnotes/static/js/3.935cadd7.chunk.js",
+    "static/js/3.935cadd7.chunk.js.map": "/reactnotes/static/js/3.935cadd7.chunk.js.map",
+    "index.html": "/reactnotes/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/reactnotes/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.e7380d17.chunk.css.map": "/reactnotes/static/css/main.e7380d17.chunk.css.map",
+    "static/js/2.64ddc5a3.chunk.js.LICENSE.txt": "/reactnotes/static/js/2.64ddc5a3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80fd8e14.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.64ddc5a3.chunk.js",
+    "static/css/main.e7380d17.chunk.css",
+    "static/js/main.165f8c70.chunk.js"
+  ]
+}
