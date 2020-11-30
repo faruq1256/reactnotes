@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import './index.css';
+import Header from "./Header";
+import CreateNote from "./CreateNote";
+import Note from "./Note";
+import Footer from "./Footer";
 
-function App() {
+const App = () => {
+  const [listNote, setListNote] = useState([]);
+
+  const addNote = (note) => {
+    setListNote((prevData) => {
+      return [...prevData, note];
+    });
+  };
+
+  const deleteEvent = (id) => {
+    console.log("clicked");
+    setListNote((oldArr) => {
+      return oldArr.filter((oldArr, index) => {
+        return index !== id;
+      });
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <CreateNote passNote={addNote} />
+      <hr></hr>
+
+      <div className="container-fluid mb-5 ml-3  contact_div">
+      <div className="row">
+        <div className="col-10 max-auto max_auto">
+            <div className="row gy-4 gx-4"></div>
+      {listNote.map((val, index) => {
+        return (
+          <Note
+            id={index}
+            key={index}
+            title={val.title}
+            desc={val.desc}
+            onSelect={() => {
+              return deleteEvent(index);
+            }}
+          />
+        );
+      })}
+      </div>
+      </div>
+      </div>
+
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
